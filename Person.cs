@@ -3,24 +3,25 @@ using System.Collections.Generic;
 
 namespace TjuvOchPolis
 {
-    class Person
+     class Person
     {
         public int CurentPositionX { get; set; }
         public int CurentPositionY { get; set; }
         public int Direction { get; set; }
+        public string Token { get; set; }
+
+        public static List<string> Inventory = new List<string>(); 
 
         public static List<Person> PersonList = new List<Person>();
-        public Person(int curentpositionX, int curentpositionY, int direction)
+
+        public Person(int curentpositionX, int curentpositionY, int direction, string token)
         {
             CurentPositionX = curentpositionX;
             CurentPositionY = curentpositionY;
             Direction = direction;
+            Token = token;
         }
-        public static void FillCityWithPeople()
-        {
-            Citizen.CreateCitizens(3);
-            
-        }
+        
         public static void Move(List<Person> Personlist, int i, int j)//Stoppa in lista med persiner och fp dom att röra sig
         {
             foreach (var Person in PersonList)

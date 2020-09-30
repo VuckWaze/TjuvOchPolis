@@ -36,3 +36,4 @@ C:\Users\kujar\source\repos\TjuvOchPolis\TjuvOchPolis\TjucOchPolis\TjuvOchPolis 
 C:\Users\kujar\source\repos\TjuvOchPolis\TjuvOchPolis\TjucOchPolis\TjuvOchPolis - kopia\TjuvOchPolis\TjucOchPolis\TjuvOchPolis\obj\Debug\netcoreapp3.1\TjuvOchPolis.dll
 C:\Users\kujar\source\repos\TjuvOchPolis\TjuvOchPolis\TjucOchPolis\TjuvOchPolis - kopia\TjuvOchPolis\TjucOchPolis\TjuvOchPolis\obj\Debug\netcoreapp3.1\TjuvOchPolis.pdb
 C:\Users\kujar\source\repos\TjuvOchPolis\TjuvOchPolis\TjucOchPolis\TjuvOchPolis - kopia\TjuvOchPolis\TjucOchPolis\TjuvOchPolis\obj\Debug\netcoreapp3.1\TjuvOchPolis.genruntimeconfig.cache
+C:\Users\kujar\source\repos\TjuvOchPolis\TjuvOchPolis\obj\Debug\netcoreapp3.1\TjuvOchPolis.csprojAssemblyReference.cache
