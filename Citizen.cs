@@ -7,7 +7,7 @@ namespace TjuvOchPolis
 {
     class Citizen : Person
     {
-        //public int CurentPositionX { get; set; }jhgygyjfgyjf
+        //public int CurentPositionX { get; set; }
         //public int CurentPositionY { get; set; }
         //public int MoveX { get; set; }
         //public int MoveY { get; set; }
