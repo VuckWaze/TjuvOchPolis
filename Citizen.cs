@@ -15,6 +15,7 @@ namespace TjuvOchPolis
         public Citizen(int curentpositionX, int curentpositionY, int direction)
             : base(curentpositionX, curentpositionY, direction)
         {
+            //blabla bla test
             CurentPositionX = curentpositionX;
             CurentPositionY = curentpositionY;
             Direction = direction;
