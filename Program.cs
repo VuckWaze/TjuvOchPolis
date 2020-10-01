@@ -9,15 +9,13 @@ namespace TjuvOchPolis
         static void Main(string[] args)
         {
             List<Person> Personlist= GeneratePeople(30,30,30);
-            Game.EmptyBoard();
-
             while (true)
             {
-                Console.ReadLine();
-
+                Console.Clear();
+                Game.GenerateGameBoard(Personlist);
+                Game.Move(Personlist);
+               // Console.ReadLine();
             }
-
-
         }
         static List<Person> GeneratePeople(int numberOfCitizens, int numberOfThiefs, int numberOfPolices)
         {

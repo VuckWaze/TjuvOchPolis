@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
+using System.Net.Http.Headers;
 using System.Text;
 
 namespace TjuvOchPolis
@@ -19,18 +20,17 @@ namespace TjuvOchPolis
             for (int i = 0; i < a; i++)//slumpa startpositioner
             {
                 Random r = new Random();
-                int x=r.Next(1,100);
+                int x=r.Next(0,100);
 
                 Random r1= new Random();
-                int y= r1.Next(1,25);
+                int y= r1.Next(0,25);
 
                 Random r2 = new Random();
                 int z = r2.Next(1, 9);
-
-                Inventory.Add("Watch");
-                Inventory.Add("Phone");
-                Inventory.Add("Wallet");
-                Inventory.Add("Keys");
+                Inventory.Add(new Inventory("Phone"));
+                Inventory.Add(new Inventory("Keys"));
+                Inventory.Add(new Inventory("Wallet"));
+                Inventory.Add(new Inventory("Money"));
 
                 PersonList.Add(new Citizen(x, y, z, "M"));
             }

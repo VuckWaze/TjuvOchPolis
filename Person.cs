@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace TjuvOchPolis
 {
-     class Person
+    abstract class Person
     {
         public int CurentPositionX { get; set; }
         public int CurentPositionY { get; set; }
         public int Direction { get; set; }
         public string Token { get; set; }
 
-        public static List<string> Inventory = new List<string>(); 
+        public static List<Inventory> Inventory = new List<Inventory>(); 
 
         public static List<Person> PersonList = new List<Person>();
 

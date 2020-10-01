@@ -6,5 +6,10 @@ namespace TjuvOchPolis
 {
     class Inventory
     {
+        public string Stuff { get; set; }
+        public Inventory(string stuff)
+        {
+            Stuff = stuff;
+        }
     }
 }

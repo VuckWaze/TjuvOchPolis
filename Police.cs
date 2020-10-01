@@ -19,15 +19,15 @@ namespace TjuvOchPolis
             for (int i = 0; i < a; i++)//slumpa startpositioner
             {
                 Random r = new Random();
-                int x = r.Next(1, 100);
+                int x = r.Next(0, 100);
 
                 Random r1 = new Random();
-                int y = r1.Next(1, 25);
+                int y = r1.Next(0, 25);
 
                 Random r2 = new Random();
                 int z = r2.Next(1, 9);
 
-                PersonList.Add(new Police(x, y, z, "T"));
+                PersonList.Add(new Police(x, y, z, "P"));
             }
         }
     }
