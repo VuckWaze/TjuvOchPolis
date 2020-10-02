@@ -7,6 +7,7 @@ namespace TjuvOchPolis
     {
         static void Main(string[] args)
         {
+            Console.CursorVisible = false;
             List<Person> Personlist= GeneratePeople(30,30,30);
             while (true)
             {
@@ -14,8 +15,6 @@ namespace TjuvOchPolis
                 Game.Muggin(Personlist);
                 Game.Move(Personlist);
                 Console.Clear();
-
-
             }
         }
         static List<Person> GeneratePeople(int numberOfCitizens, int numberOfThiefs, int numberOfPolices)

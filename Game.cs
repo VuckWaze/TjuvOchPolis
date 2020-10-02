@@ -49,15 +49,14 @@ namespace TjuvOchPolis
                 var tmpPerson= item;
                 foreach (var person in personList)
                 {
-                    if (tmpPerson is Citizen && person is Thief && tmpPerson.CurentPositionX==person.CurentPositionX && tmpPerson.CurentPositionY==person.CurentPositionY)
+                    if (tmpPerson is Citizen && person is Thief && tmpPerson.CurentPositionX==person.CurentPositionX 
+                                                                && tmpPerson.CurentPositionY==person.CurentPositionY)
                     {
-                        item.Token = "X";
+                        Console.SetCursorPosition(item.CurentPositionX,item.CurentPositionY);
+                        Console.Write("X");
                         nmbrMuggins++;
                         Thread.Sleep(5000);
-                        //item.Token = " ";
-
                     }
-
                 }
             }
             return nmbrMuggins;
@@ -171,7 +170,6 @@ namespace TjuvOchPolis
                         break;
                     default:
                         break;
-                        
                 }
             }
         }
