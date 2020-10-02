@@ -4,6 +4,9 @@ using System.Globalization;
 using System.Runtime.InteropServices.ComTypes;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
+
+
 
 namespace TjuvOchPolis
 {
@@ -34,21 +37,34 @@ namespace TjuvOchPolis
                 for (int j = 0; j < X; j++)
                 {
                     Console.Write(GameBoard[j,i].Token);
-                    Collide();
                 }
                 Console.WriteLine();
             }
         }
-        public static void Collide()
+        public static int Muggin(List<Person>personList)
         {
-            foreach (var item in Person.PersonList)
+            int nmbrMuggins= 0;
+            foreach (var item in personList)
             {
-                var check= item;
-                if (item == GameBoard[check.CurentPositionX, check.CurentPositionY] )
+                var tmpPerson= item;
+                foreach (var person in personList)
                 {
-                   
+                    if (tmpPerson is Citizen && person is Thief && tmpPerson.CurentPositionX==person.CurentPositionX && tmpPerson.CurentPositionY==person.CurentPositionY)
+                    {
+                        item.Token = "X";
+                        nmbrMuggins++;
+                        Thread.Sleep(5000);
+                        //item.Token = " ";
+
+                    }
+
                 }
             }
+            return nmbrMuggins;
+        }
+        public static void Arrest()
+        { 
+        
         }
         public static void Move(List<Person>personList)
         {

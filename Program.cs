@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-
+using System.Threading;
 namespace TjuvOchPolis
 {
     class Program
@@ -11,10 +10,12 @@ namespace TjuvOchPolis
             List<Person> Personlist= GeneratePeople(30,30,30);
             while (true)
             {
-                Console.Clear();
                 Game.GenerateGameBoard(Personlist);
+                Game.Muggin(Personlist);
                 Game.Move(Personlist);
-               // Console.ReadLine();
+                Console.Clear();
+
+
             }
         }
         static List<Person> GeneratePeople(int numberOfCitizens, int numberOfThiefs, int numberOfPolices)
